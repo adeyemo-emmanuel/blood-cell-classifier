@@ -5,7 +5,12 @@ import numpy as np
 import torch
 import torch.nn as nn
 from PIL import Image
-import spaces
+try:
+    import spaces
+    gpu = spaces.GPU
+except ImportError:
+    def gpu(fn):
+        return fn
 
 def conv_block(c_in, c_out):
     return nn.Sequential(
@@ -40,7 +45,7 @@ model = SimpleCNN(len(CLASSES))
 model.load_state_dict(ckpt["model_state"])
 model.eval()
 
-@spaces.GPU
+@gpu
 def classify(img):
     if img is None:
         return None
