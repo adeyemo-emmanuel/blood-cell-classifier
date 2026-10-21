@@ -1,0 +1,16 @@
+# Core
+torch>=2.0
+torchvision>=0.15
+numpy
+pillow
+
+# Demo app (app.py)
+gradio>=5.0
+
+# Notebook (training and evaluation)
+pandas
+scikit-learn
+matplotlib
+seaborn
+tqdm
+jupyter

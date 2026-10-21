@@ -1,0 +1,41 @@
+# Dataset (download separately from Mendeley Data)
+data/
+PBC_dataset*/
+*.zip
+
+# Training outputs (keep only the final deployed model)
+outputs/
+*_split.csv
+*.pt
+!cv01_model_full.pt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+cv01-env/
+
+# Gradio
+flagged/
+.gradio/
+
+# Secrets and tokens
+.env
+*.token
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/
