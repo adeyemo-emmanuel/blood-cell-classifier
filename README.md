@@ -91,11 +91,11 @@ The best checkpoint (epoch 9) is saved with its class names and image size in `c
 ## Repository structure
 
 ```
-cv01-blood-cell-classifier/
+blood-cell-classifier/
 ├── README.md
 ├── app.py                           # Gradio demo
 ├── requirements.txt
-├── cv01_blood_cell_classifier.ipynb # data checks, training, evaluation
+├── Blood_Cell_Classifier.ipynb      # data checks, training, evaluation
 ├── cv01_model_full.pt               # trained weights + class names
 ├── assets/                          # learning curves, confusion matrix
 └── .gitignore
@@ -104,8 +104,8 @@ cv01-blood-cell-classifier/
 ## Run it
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/cv01-blood-cell-classifier.git
-cd cv01-blood-cell-classifier
+git clone https://github.com/adeyemo-emmanuel/blood-cell-classifier.git
+cd blood-cell-classifier
 pip install -r requirements.txt
 ```
 
